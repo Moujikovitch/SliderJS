@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+      <title>sliderjs</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript">
+        interrupteur = 0
+          setInterval("start()", 1200);
+            function start() {
+              if (interrupteur == 1) {
+              interrupteur = 0
+              } else {
+              interrupteur = 1
+              }
+          };
+          var temps = 0
+          setInterval("compter()",20);
+          function compter() {
+            if (interrupteur == 1) {
+              if (temps > 2400) {
+                temps = 0 
+                document.getElementById("imgcont").style.marginLeft = "0px";
+              } else {
+              temps += 10
+              document.getElementById("imgcont").style.marginLeft = "-"+temps+""+"px";
+              }
+            }
+          };
+        </script>
+  </head>
+  <body>
+    <div id="ecran">
+      <div id="imgcont" onclick="start()">
+        <div id="pic1" class="imag"></div>
+        <div id="pic2" class="imag"></div>
+        <div id="pic3" class="imag"></div>
+        <div id="pic4" class="imag"></div>
+        <div id="pic5" class="imag"></div>
+      </div>
+    </div>
+  </body>
+</html>

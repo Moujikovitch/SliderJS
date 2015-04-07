@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+      <title>sliderjs</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript">
+
+        var decalage = 0
+
+        function deplace() {
+          if (decalage >= 2400) {
+          decalage = 0
+          document.getElementById("imgcont").style.marginLeft = "-"+decalage+""+"px";
+          } else {
+          decalage += 600
+          document.getElementById("imgcont").style.marginLeft = "-"+decalage+""+"px";
+          }
+        };
+        var timerslider = setInterval("deplace()",3000);
+        </script>
+  </head>
+  <body>
+    <div id="ecran">
+      <div id="imgcont" onclick="deplace()">
+        <div id="pic1" class="imag"></div>
+        <div id="pic2" class="imag"></div>
+        <div id="pic3" class="imag"></div>
+        <div id="pic4" class="imag"></div>
+        <div id="pic5" class="imag"></div>
+      </div>
+    </div>
+  </body>
+</html>

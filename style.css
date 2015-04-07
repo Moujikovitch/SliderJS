@@ -1,0 +1,41 @@
+html, body {
+  margin:0;
+  padding:0;
+  background-color:black;
+}
+#ecran {
+  margin:auto;
+  overflow:hidden;
+  height:300px;
+  width:600px;
+  background-color:blue;
+}
+#imgcont {
+  height:100%;
+  width:500%;
+  background-color:green;
+  margin:0;
+  padding:0;
+}
+.imag {
+  height:300px;
+  width:600px;
+  float:left;
+}
+#pic1 {
+  background-image:url(./media/01.jpg);
+  background-position: top
+}
+#pic2 {
+  background-image:url(./media/02.jpg);
+  background-size: 100%;
+}
+#pic3 {
+  background-image:url(./media/03.jpg);
+}
+#pic4 {
+  background-image:url(./media/04.jpg);
+}
+#pic5 {
+  background-image:url(./media/05.jpg);
+}
